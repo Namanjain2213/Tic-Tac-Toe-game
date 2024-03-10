@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+.wraper {
+    width: 100wh;
+    height: 100vh;
+    background: linear-gradient(35deg, aqua, yellow, green, red, rgb(205, 205, 216), lightblue, orange, pink, lightgreen);
+    display: grid;
+    place-items: center;
+}
+
+.game-info {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    color: white;
+    top: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+.tic-tac-toe {
+    width: 90%;
+    max-width: 20rem;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+    margin-top: 3rem;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1,
+.box2,
+.box4,
+.box5 {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3,
+.box6 {
+    border-bottom: 2px solid white;
+}
+
+.box7,
+.box8 {
+    border-right: 2px solid white;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: none;
+}
+
+.btn.active {
+    display: flex;
+}
+
+.win {
+    background-color: aquamarine;
+}
